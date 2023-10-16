@@ -1,0 +1,180 @@
+body{
+    background-color: $white;
+}
+
+.page{
+    width: 75rem;
+    margin: auto;
+
+}
+
+
+header{
+    margin-top: 74px;
+    width: 417px;
+
+    h1{
+        font-family: Staatliches, sans-serif;
+        font-size: 4.8rem;
+        color: #FFF;
+    }
+    p{
+        font-size: 2rem;
+        color: #FFF;
+    }
+}
+
+body::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    // left: 0;
+
+    width: 100%;
+    height: 35rem;
+
+    background: $dark-gray;
+    z-index: -1;
+}
+
+h1, legend, button{
+    font-family: Staatliches, sans-serif;
+}
+
+input{
+    height: 5.6rem;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    padding: 20px;
+
+    background-color: #FAFAFC;
+
+    &:invalid{
+        border: 1px solid red;
+    }
+}
+
+form{
+    height: 108rem;
+    padding: 64px;
+
+    margin-top: 57px;
+
+    border-radius: 20px 20px 0 0;
+
+    background-color: #FFF;
+
+    fieldset{
+        &:not(:first-child){
+            margin-top: 3rem;
+        }
+        &:first-child{
+            legend{
+                 padding-bottom: 16px;
+            }
+         }
+        legend{
+            width: 100%;
+            color: $dark-gray;
+            font-size: 2.4rem;
+            line-height: 3.4rem;
+
+
+
+            border-bottom: 1px solid #E6E6F0;
+        }
+
+        .row-name-2{
+            display: flex;
+            gap: 22px;
+            .input-wrapper{
+                width: 100%;
+
+                margin-top: 36px;
+                input{
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        .col-3{
+            display: flex;
+            gap: 32px;
+            .input-wrapper{
+                width: 100%;
+            }
+            .col-2{
+                display: flex;
+                gap: 10px;
+                width: 100%;
+                .input-wrapper{
+                    width: 100%;
+                }
+            }
+        }
+
+        .input-wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.6rem;
+            legend{
+                border: 0;
+                font-size: 2rem;
+            }
+            label{
+                color: #4E4958;
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                span{
+                    color: #C1BCCC;
+                    &:hover{
+                        color: #272727;
+                    }
+                }
+            }
+            input{
+                margin-top: 8px;
+            }
+        }
+
+        .horas{
+            span{
+                margin-left: 10px;
+            }
+            legend{
+                border: 0;
+                margin-top: 32px;
+            }
+        }
+    }
+}
+
+footer{
+    width: 75rem;
+    height: 16rem;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0 0 20px 20px;
+    background-color: $dark-gray;
+
+    button{
+        width: 60rem;
+        padding: 1.5rem 4rem;
+        cursor: pointer;
+
+        border-radius: 20px;
+
+        font-size: 2rem;
+        line-height: 2.6rem;
+        color: #FFF;
+
+        background-color: $bright-pink;
+    }
+}

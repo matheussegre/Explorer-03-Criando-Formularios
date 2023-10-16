@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #EFEFEF;
+}
+
+.page {
+  width: 75rem;
+  margin: auto;
+}
+
+header {
+  margin-top: 74px;
+  width: 417px;
+}
+header h1 {
+  font-family: Staatliches, sans-serif;
+  font-size: 4.8rem;
+  color: #FFF;
+}
+header p {
+  font-size: 2rem;
+  color: #FFF;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 35rem;
+  background: #535971;
+  z-index: -1;
+}
+
+h1, legend, button {
+  font-family: Staatliches, sans-serif;
+}
+
+input {
+  height: 5.6rem;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #FAFAFC;
+}
+input:invalid {
+  border: 1px solid red;
+}
+
+form {
+  height: 108rem;
+  padding: 64px;
+  margin-top: 57px;
+  border-radius: 20px 20px 0 0;
+  background-color: #FFF;
+}
+form fieldset:not(:first-child) {
+  margin-top: 3rem;
+}
+form fieldset:first-child legend {
+  padding-bottom: 16px;
+}
+form fieldset legend {
+  width: 100%;
+  color: #535971;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  border-bottom: 1px solid #E6E6F0;
+}
+form fieldset .row-name-2 {
+  display: flex;
+  gap: 22px;
+}
+form fieldset .row-name-2 .input-wrapper {
+  width: 100%;
+  margin-top: 36px;
+}
+form fieldset .row-name-2 .input-wrapper input {
+  margin-top: 8px;
+}
+form fieldset .col-3 {
+  display: flex;
+  gap: 32px;
+}
+form fieldset .col-3 .input-wrapper {
+  width: 100%;
+}
+form fieldset .col-3 .col-2 {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+form fieldset .col-3 .col-2 .input-wrapper {
+  width: 100%;
+}
+form fieldset .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+}
+form fieldset .input-wrapper legend {
+  border: 0;
+  font-size: 2rem;
+}
+form fieldset .input-wrapper label {
+  color: #4E4958;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+form fieldset .input-wrapper label span {
+  color: #C1BCCC;
+}
+form fieldset .input-wrapper label span:hover {
+  color: #272727;
+}
+form fieldset .input-wrapper input {
+  margin-top: 8px;
+}
+form fieldset .horas span {
+  margin-left: 10px;
+}
+form fieldset .horas legend {
+  border: 0;
+  margin-top: 32px;
+}
+
+footer {
+  width: 75rem;
+  height: 16rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
+  background-color: #535971;
+}
+footer button {
+  width: 60rem;
+  padding: 1.5rem 4rem;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #FFF;
+  background-color: #FF5374;
+}/*# sourceMappingURL=style.css.map */
